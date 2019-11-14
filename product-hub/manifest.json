@@ -1,0 +1,51 @@
+{
+  "name": "Gainsight-Community-Tool",
+  "version": "1.0",
+  "description": "Gainsight-Community-Tool",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "idle",
+    "identity",
+    "identity.email"
+  ],
+  "page_action": {
+    "default_popup": "html/popup.html",
+    "default_icon": {
+      "16": "images/gainsight.png",
+      "32": "images/gainsight.png",
+      "48": "images/gainsight.png",
+      "128": "images/gainsight.png"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Open Gainsight-Community-Tool"
+    }
+  },
+  "icons": {
+    "16": "images/gainsight.png",
+    "32": "images/gainsight.png",
+    "48": "images/gainsight.png",
+    "128": "images/gainsight.png"
+  },
+  "manifest_version": 2,
+  "oauth2": {
+    "client_id": "270105379405-h86341idrrqh3shums1ek25ag1cb77kn.apps.googleusercontent.com",
+    "scopes": [
+      ""
+    ]
+  }
+}
